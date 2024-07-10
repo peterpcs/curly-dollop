@@ -1,0 +1,9 @@
+{
+  "name": "invetory-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/directory-e2e/src",
+  "implicitDependencies": ["invetory"],
+  "// targets": "to see all targets run: nx show project invetory-e2e --web",
+  "targets": {}
+}
