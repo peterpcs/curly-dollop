@@ -4,7 +4,7 @@ import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 export default defineConfig({
   root: __dirname,
-  cacheDir: '../node_modules/.vite/libs',
+  cacheDir: '../../node_modules/.vite/libs/orders',
 
   plugins: [react(), nxViteTsPaths()],
 
@@ -16,10 +16,13 @@ export default defineConfig({
   test: {
     watch: false,
     globals: true,
-    cache: { dir: '../node_modules/.vitest/libs' },
+    cache: { dir: '../../node_modules/.vitest/libs/orders' },
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     reporters: ['default'],
-    coverage: { reportsDirectory: '../coverage/libs', provider: 'v8' },
+    coverage: {
+      reportsDirectory: '../../coverage/libs/orders',
+      provider: 'v8',
+    },
   },
 });
